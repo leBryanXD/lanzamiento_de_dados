@@ -1,0 +1,93 @@
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+body {
+  background-color: cadetblue;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  text-align: center;
+}
+.titulo > h1 {
+  font-size: 3rem;
+}
+.subtitulo {
+  text-align: center;
+}
+.subtitulo > h2,
+.jugador > h2 {
+  font-size: 2rem;
+}
+.jugadores {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jugador {
+  text-align: center;
+}
+.jugador img {
+  background-color: #ffff00;
+  border-radius: 50%;
+}
+main {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.dado {
+  background-color: white;
+  border-radius: 20%;
+}
+.dado > img {
+  width: 100%;
+  height: 50vh;
+}
+.boton {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton button {
+  border-radius: 50%;
+
+  background-color: cadetblue;
+  border: 0;
+}
+.boton button:hover {
+  cursor: pointer;
+  transform: rotate(10deg);
+}
+
+/*medias*/
+@media (min-width: 50px) and (max-width: 480px) {
+  .dado > img {
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .dado > img {
+    width: 100%;
+    height: 25vh;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .dado > img {
+    width: 100%;
+    height: 30vh;
+  }
+}
+@media (min-width: 1601px) {
+}
